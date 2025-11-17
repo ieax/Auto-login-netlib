@@ -92,8 +92,7 @@ async function loginWithAccount(user, pass) {
     await page.click('button:has-text("Validate"), input[type="submit"]');
     
     await page.waitForLoadState('networkidle');
-    await page.waitForTimeout(5000);
-   D
+    await page.waitForTimeout(6200);
     // 检查登录是否成功
     const pageContent = await page.content();
     
